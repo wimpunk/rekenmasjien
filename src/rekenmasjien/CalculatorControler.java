@@ -20,11 +20,11 @@ import javax.swing.JFrame;
 
 public class CalculatorControler {
     private CalculatorView view;
-    private CalculatorModel model;
+    private CalculatorModelInterface model;
 
-    public CalculatorControler() {
+    public CalculatorControler(CalculatorModelType type) {
         view = new CalculatorView(this);
-        model = new CalculatorModel();
+        model = CalculatorModelFactory.createCalculatorModel(type);
 
         view.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         view.setVisible(true);

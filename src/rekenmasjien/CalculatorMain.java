@@ -16,7 +16,9 @@ package rekenmasjien;
 
 public class CalculatorMain {
     public static void main(String[] args) {
-        @SuppressWarnings("unused")
-		CalculatorControler controler = new CalculatorControler();
+    	CalculatorModelType type = CalculatorModelType.RPN_MODEL;
+
+    	@SuppressWarnings("unused")
+		CalculatorControler controler = new CalculatorControler(type);
     }
 }

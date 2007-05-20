@@ -1,22 +1,10 @@
 package rekenmasjien;
 
 import java.util.LinkedList;
-/*
-* $Id: CalculatorModel.java,v 1.3 2007/03/31 11:05:52 wimpunk Exp $
-*
-* $Header: /cvs/stdx/rekenmachine/src/rekenmasjien/CalculatorModel.java,v 1.3 2007/03/31 11:05:52 wimpunk Exp $
-* $LastChangedDate: 2007-03-13 23:25:45 +0100 (Tue, 13 Mar 2007) $
-* $Revision: 1.3 $
-* $Author: wimpunk $
-* 
-* $Log: CalculatorModel.java,v $
-* Revision 1.3  2007/03/31 11:05:52  wimpunk
-* We blijven spelen met cvs
-*
-*
-* */
 
-public class CalculatorModel {
+
+
+public class CalculatorModelRPN implements CalculatorModelInterface {
 
 	private LinkedList<Integer> stack;
 
@@ -27,7 +15,7 @@ public class CalculatorModel {
 									// ter info op het scherm. Indien niet, dan
 									// is getal editeerbaar.
 
-	public CalculatorModel() {
+	public CalculatorModelRPN() {
 		stack = new LinkedList<Integer>();
 	}
 
@@ -142,7 +130,7 @@ public class CalculatorModel {
 	}
 
 	public static void main(String[] args) {
-		CalculatorModel calculatorModel = new CalculatorModel();
+		CalculatorModelRPN calculatorModel = new CalculatorModelRPN();
 		calculatorModel.pushGetal(123);
 		calculatorModel.pushGetal(234);
 		calculatorModel.pushGetal(345);
@@ -184,3 +172,11 @@ public class CalculatorModel {
 		this.getal = getal;
 	}
 }
+/*
+ * $Id$
+ *
+ * $LastChangedDate$
+ * $Rev$
+ * $Author$
+ *
+ * */
