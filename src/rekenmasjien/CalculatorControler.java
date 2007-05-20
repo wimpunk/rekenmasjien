@@ -1,0 +1,39 @@
+package rekenmasjien;
+
+/*
+* $Id: CalculatorControler.java,v 1.3 2007/05/20 13:16:38 wimpunk Exp $
+*
+* $Header: /cvs/stdx/rekenmachine/src/rekenmasjien/CalculatorControler.java,v 1.3 2007/05/20 13:16:38 wimpunk Exp $
+* $LastChangedDate: 2007-03-13 23:25:45 +0100 (Tue, 13 Mar 2007) $
+* $Revision: 1.3 $
+* $Author: wimpunk $
+* 
+* $Log: CalculatorControler.java,v $
+* Revision 1.3  2007/05/20 13:16:38  wimpunk
+* Updated ID
+*
+*
+* */
+
+
+import javax.swing.JFrame;
+
+public class CalculatorControler {
+    private CalculatorView view;
+    private CalculatorModel model;
+
+    public CalculatorControler() {
+        view = new CalculatorView(this);
+        model = new CalculatorModel();
+
+        view.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        view.setVisible(true);
+    }
+
+    public void action(char c) {
+        System.out.println("Character ontvangen: " + c);
+        model.setC(c);
+        String getal = model.getGetal().toString();
+        view.setGetal(getal);
+    }
+}
