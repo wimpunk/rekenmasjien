@@ -1,7 +1,14 @@
 package rekenmasjien;
 
 import java.util.LinkedList;
-
+/*
+ * $Id$
+ *
+ * $LastChangedDate$
+ * $Rev$
+ * $Author$
+ *
+ * */
 
 
 public class CalculatorModelRPN implements CalculatorModelInterface {
