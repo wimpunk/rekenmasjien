@@ -1,5 +1,12 @@
 package rekenmasjien;
-
+/*
+ * $Id$
+ *
+ * $LastChangedDate$
+ * $Rev$
+ * $Author$
+ *
+ * */
 public class CalculatorModelFactory {
 	private CalculatorModelFactory() {
 	}
@@ -22,11 +29,4 @@ public class CalculatorModelFactory {
 		createCalculatorModel(CalculatorModelType.OPERATOR_MODEL);
 	}
 }
-/*
- * $Id$
- *
- * $LastChangedDate$
- * $Rev$
- * $Author$
- *
- * */
+
