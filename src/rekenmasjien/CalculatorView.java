@@ -369,6 +369,7 @@ public class CalculatorView extends JFrame {
 		if (buttonPlus == null) {
 			buttonPlus = new JButton();
 			buttonPlus.setText("+");
+			buttonPlus.addActionListener(b);
 		}
 		return buttonPlus;
 	}
@@ -382,6 +383,7 @@ public class CalculatorView extends JFrame {
 		if (buttonMin == null) {
 			buttonMin = new JButton();
 			buttonMin.setText("-");
+			buttonMin.addActionListener(b);
 		}
 		return buttonMin;
 	}
@@ -408,7 +410,7 @@ public class CalculatorView extends JFrame {
 		if (buttonMaal == null) {
 			buttonMaal = new JButton();
 			buttonMaal.setText("*");
-			buttonClear.addActionListener(b);
+			buttonMaal.addActionListener(b);
 		}
 		return buttonMaal;
 	}
